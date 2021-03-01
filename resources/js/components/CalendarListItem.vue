@@ -1,10 +1,10 @@
 <template>
     <b-list-group-item>
-        <div class="d-flex">
-            <b-col cols="2">
+        <b-row>
+            <b-col lg="2" md="3" sm="12">
                 {{ day.dayWeek }}
             </b-col>
-            <b-col cols="10">
+            <b-col lg="10" md="9" sm="12">
                 <b-badge class="badge " v-for="(event, index) in day.events" :variant="badgeVariant(event.event_id)"
                          :key="day.id">
                     <div class="d-flex align-items-center text-capitalize">
@@ -14,7 +14,7 @@
                     </div>
                 </b-badge>
             </b-col>
-        </div>
+        </b-row>
     </b-list-group-item>
 </template>
 

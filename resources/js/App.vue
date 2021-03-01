@@ -7,10 +7,10 @@
                     header-tag="header"
                 >
                     <b-row>
-                        <b-col cols="3">
+                        <b-col lg="3" md="5" sm="12" class="event-form-section mb-md-0">
                             <calendar-event-add-form @eventadded="eventAdded"/>
                         </b-col>
-                        <b-col cols="9">
+                        <b-col lg="9" md="7" sm="12">
                             <calendar-list
                                 :selected-date="selectedDate"
                                 :disable-calendar="isFetching"
@@ -107,5 +107,8 @@ export default {
 <style scoped>
 #main-container {
     padding: 20px;
+}
+.event-form-section {
+    margin-bottom: 20px;
 }
 </style>
